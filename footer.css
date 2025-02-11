@@ -1,0 +1,164 @@
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 22%;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column .newsletter {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-column ul li {
+  margin-bottom: 16px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-column img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0px;
+  margin-bottom: 14px;
+}
+
+.footer-bottom-links {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.footer-bottom-links::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 100vw;
+  height: 0.5px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.footer-bottom-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links ul li {
+  margin: 0 10px;
+}
+
+.footer-bottom-links ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-logo {
+  height: 44px !important;
+  width: 125.71px !important;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column:nth-child(1) {
+    order: 1; /* First column */
+  }
+
+  .footer-column:nth-child(2),
+  .footer-column:nth-child(3) {
+    order: 2;
+    width: 48%; /* Two columns on the second line */
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .footer-column:nth-child(4) {
+    order: 3; /* Logo and text on the last row */
+  }
+
+  .footer-bottom-links {
+    order: 4;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-bottom-links ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* First row: Two cols */
+  .footer-bottom-links ul li:nth-child(1),
+  .footer-bottom-links ul li:nth-child(2) {
+    display: inline-block;
+    width: auto;
+    margin: 0 10px;
+  }
+
+  /* Second row: 100% width */
+  .footer-bottom-links ul li:nth-child(3) {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Third row: 100% width */
+  .footer-bottom-links ul li:nth-child(4) {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

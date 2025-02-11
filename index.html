@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="split-section.css">
+    <link rel="stylesheet" href="product-suggestions.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="left-top">
+                <!-- Country Dropdown -->
+                <div class="dropdown">
+                    <span class="dropdown-toggle" id="selected-country">FR <img src="assets/icons/arrow-down.png"
+                            alt="arrow-down"></span>
+                    <ul class="dropdown-menu" id="country-menu">
+                        <li data-value="FR">FR</li>
+                        <li data-value="US">US</li>
+                        <li data-value="JP">JP</li>
+                    </ul>
+                </div>
+
+                <!-- Currency Dropdown -->
+                <div class="dropdown">
+                    <span class="dropdown-toggle" id="selected-currency">EUR € <img src="assets/icons/arrow-down.png"
+                            alt="arrow-down"></span>
+                    <ul class="dropdown-menu" id="currency-menu">
+                        <li data-value="EUR €">EUR €</li>
+                        <li data-value="USD $">USD $</li>
+                        <li data-value="JPY ¥">JPY ¥</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center-top">
+                <span>Livraison standard et retours offerts</span>
+            </div>
+            <div class="right-top">
+                <a href="#" class="contact-us">Contactez-nous</a>
+                <a href="#">Prendre un rendez-vous</a>
+            </div>
+        </div>
+
+
+        <div class="main-header">
+            <div class="left-side">
+                <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+                <a href="#" class="boutique-btn"> <img src="assets/icons/stores.png" alt="stores-icon">
+                    <span>BOUTIQUE</span></a>
+                <a href="#" class="search-btn"> <img src="assets/icons/search.png" alt="search-icon">
+                    <span>RECHERCHE</span></a>
+            </div>
+            <div class="logo">
+                <a><img src="assets/icons/logo_maison_michel_black.png" alt="Maison Michel Paris"
+                        class="header-logo"></a>
+            </div>
+            <div class="right-side">
+                <a href="#" class="wishlist-icon"> <img src="assets/icons/heart-line.png" alt="wishlist-icon"></a>
+                <a href="#" class="user-icon"><img src="assets/icons/user-line.png" alt="user-icon"></a>
+                <a href="#" class="cart-icon"><img src="assets/icons/shopping-bag-line.png" alt="shopping-bag"></a>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li class="nav-item" data-target="content-maison"><a href="#">LA MAISON</a></li>
+                <li class="nav-item" data-target="content-chapeaux"><a href="#">CHAPEAUX</a></li>
+                <li class="nav-item" data-target="content-accessoires"><a href="#">ACCESSOIRES</a></li>
+                <li class="nav-item" data-target="content-sacs"><a href="#">SACS</a></li>
+                <li class="nav-item" data-target="content-services"><a href="#">SERVICES ET EXPÉRIENCES</a></li>
+                <li class="nav-item" data-target="content-univers"><a href="#">NOTRE UNIVERS</a></li>
+            </ul>
+            <div class="hover-bar">
+                <div class="hover-content" id="content-maison">
+                    <div class="four-columns">
+                        <div class="column">
+                            <h3>Collections</h3>
+                            <ul>
+                                <li><a class="underline-element" href="#">Les Iconiques</a></li>
+                                <li><a class="underline-element" href="#">Mariage</a></li>
+                                <li><a class="underline-element" href="#">Enfant</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Selections</h3>
+                            <ul>
+                                <li><a class="underline-element" href="#">Édition spéciale</a></li>
+                                <li><a class="underline-element" href="#">Nouvelle collection</a></li>
+                                <li><a class="underline-element" href="#">Capsule hiver</a></li>
+                                <li><a class="underline-element" href="#">Bonnets</a> </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <a href="#"><img src="assets/img/nav-image-1.png" alt="nav-image-1" class="zoom-image"></a>
+                        </div>
+                        <div class="column">
+                            <a href="#"><img src="assets/img/nav-image-2.png" alt="nav-image-2" class="zoom-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-content static-content" id="content-chapeaux">Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Impedit cum saepe veritatis praesentium neque, nulla fugiat odio. Molestiae
+                    assumenda unde tempore exercitationem commodi! Nam veniam id corrupti ex, nesciunt architecto?</div>
+                <div class="hover-content static-content" id="content-accessoires">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Inventore, cumque. Ducimus dignissimos perferendis in blanditiis
+                    doloribus soluta consectetur labore, eaque quis iure, eius doloremque repellendus corrupti sint
+                    itaque dolorum? Molestiae?</div>
+                <div class="hover-content static-content" id="content-sacs">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Porro quibusdam aliquam sed accusantium a tempore, assumenda delectus id nisi
+                    iusto iste at quasi in eligendi mollitia ex nulla, ullam dignissimos!</div>
+                <div class="hover-content static-content" id="content-services">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Iste placeat minima laborum unde, aut tenetur doloremque maxime et optio fugit
+                    itaque, repellat tempora laboriosam esse recusandae nemo, tempore eaque rerum?</div>
+                <div class="hover-content static-content" id="content-univers">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Esse repudiandae possimus ad aperiam, sunt consectetur numquam magni! Nostrum
+                    nihil hic perspiciatis amet rerum! Saepe, incidunt suscipit reiciendis consectetur rerum libero!
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">LA MAISON</a></li>
+                <li><a href="#">CHAPEAUX</a></li>
+                <li><a href="#">ACCESSOIRES</a></li>
+                <li><a href="#">SACS</a></li>
+                <li><a href="#">SERVICES ET EXPÉRIENCES</a></li>
+                <li><a href="#">NOTRE UNIVERS</a></li>
+            </ul>
+        </div>
+        <div class="overlay" onclick="toggleMenu()"></div>
+
+
+    </header>
+
+    <main>
+        <section class="product-section">
+            <div class="product-images">
+                <img src="assets/img/product-img-1.png" alt="Product Image 1">
+                <img src="assets/img/product-img-2.png" alt="Product Image 2">
+                <img src="assets/img/product-img-3.png" alt="Product Image 3">
+            </div>
+            <div class="product-details">
+
+                <div class="slider">
+                    <div class="slides">
+                        <img src="assets/img/product-img-1.png" alt="Product Image 1">
+                        <img src="assets/img/product-img-2.png" alt="Product Image 2">
+                        <img src="assets/img/product-img-3.png" alt="Product Image 3">
+                    </div>
+
+                    <div class="arrow left-arrow"><img src="assets/icons/left-arrow.png" alt="left-arrow"></div>
+                    <div class="arrow right-arrow"><img src="assets/icons/right-arrow.png" alt="left-arrow"></div>
+
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center;justify-content: space-between;">
+                    <h2 class="mobile-padding">ANDRÉ</h2>
+                    <div style="padding-right: 10px; cursor: pointer;"><img src="assets/icons/heart-line.png"
+                            alt="wishlist-icon" class="add-to-wishlist"></div>
+                </div>
+
+                <span class="mobile-padding">Fedora • Feutre de lapin • Waterproof.</span>
+                <div class="price-container">
+                    <div class="price-group">
+                        <p class="price mobile-padding">620 €* <span class="old-price">680 €*</span></p>
+                    </div>
+                    <span class="reserve">Réserver un essayage</span>
+                </div>
+                
+                <div class="selection-row mobile-padding">
+                    <div class="color-swatch">
+                        <span>Couleur</span>
+                        <div class="colors">
+                            <div class="color" id="black" onclick="selectColor('black')"></div>
+                            <div class="color" id="white" onclick="selectColor('white')"></div>
+                            <div class="color" id="brown" onclick="selectColor('brown')"></div>
+                            <div class="color unavailable-color" id="navy"></div>
+                            <div class="color" id="gray" onclick="selectColor('gray')"></div>
+                            <div class="color" id="red" onclick="selectColor('red')"></div>
+                        </div>
+                        <div class="custom-select color-dropdown">
+                            <div class="selected-option">Select an option</div>
+                            <div class="options">
+                                <div class="option selected" data-value="black">
+                                    <span class="color-box" style="background: #202124"></span> Noir
+                                </div>
+                                <div class="option" data-value="white">
+                                    <span class="color-box" style="background: #faf0e7"></span> Bleu
+                                </div>
+                                <div class="option" data-value="brown">
+                                    <span class="color-box" style="background: #bf8c5f"></span> Vert
+                                </div>
+                                <div class="option" data-value="gray">
+                                    <span class="color-box" style="background: #bababa"></span> Blanc
+                                </div>
+                                <div class="option" data-value="red">
+                                    <span class="color-box" style="background: #6c1625"></span> Rouge
+                                </div>
+                            </div>
+                            <input type="hidden" id="selected-value" />
+                        </div>
+                    </div>
+                    <div class="size-selection">
+                        <div>
+                            <span>Taille</span>
+                            <span class="size-guide right" onclick="openModal()">Guide des tailles</span>
+                        </div>
+                        <div class="sizes">
+                            <button class="size" on>S 56 cm</button>
+                            <button class="size">M 58 cm</button>
+                            <button class="size unavailable">L 60 cm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-info mobile-padding">
+                    <p>* Prix retail recommandé.<a href="#">Voir les mentions légales</a> </p>
+                    <button class="choose-size">CHOISIR UNE TAILLE</button>
+                    <p class="paypal">Paiement <img src="assets/icons/paypal.png" alt="paypal"> 4x sans frais</p>
+                </div>
+                <div class="description-container mobile-padding">
+                    <p class="short-description faded">
+                        Découvrez un charme intemporel avec notre chapeau fedora en feutre,
+                        magnifiquement rehaussé d’un ruban gros-grain ton sur ton.
+                        Élevez votre style avec cet accessoire classique.
+                    </p>
+                    <p class="full-description hidden">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <a href="#" class="toggle-description">Voir plus</a>
+                </div>
+                <div class="accordion mobile-padding">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2>CONSEILS D’ENTRETIEN</h2>
+                            <span class="accordion-icon">-</span>
+                        </div>
+                        <div class="accordion-content" style="display: block;" <p>
+                            spanndre soin de ses chapeaux est essentiel pour conserver leur forme et leur élégance au
+                            fil du temps.
+                            Pour un entretien optimal, certains outils sont incontournables.
+                            </p>
+                            <a href="#">En savoir plus</a>
+                            <div class="product-grid">
+                                <div class="product">
+                                    <img src="assets/img/kit-entretien.png" alt="Kit d’entretien">
+                                    <div class="mini-product-info">
+                                        <p class="product-title">KIT D’ENTRETIEN <span class="price right">70€</span>
+                                        </p>
+                                        <a href="#" class="add-to-cart">+ <span> Ajouter au panier</span></a>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img src="assets/img/boite-chapeau.png" alt="Boîte à chapeaux">
+                                    <div class="mini-product-info">
+                                        <p class="product-title">BOÎTE À CHAPEAUX <span class="price right">170€</span>
+                                        </p>
+                                        <a href="#" class="add-to-cart">+ <span>Ajouter au panier</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2>LIVRAISONS & RETOURS GRATUITS</h2>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2>Savoir-Faire & Forme</h2>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <button class="try-in-store">Essayer en boutique</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="split-section">
+            <div class="text-content">
+                <h2>NOTRE SAVOIR-FAIRE</h2>
+                <p>
+                    Culpa aute, veniam consequat consectetur. Consequat consectetur, cillum
+                    consequat commodo incididunt. Consequat commodo incididunt et, et laboris.
+                    Et et laboris non ad. Laboris non ad qui. Ad qui elit mollit dolore ad
+                    laborum. Elit mollit dolore, ad laborum tempor sint. Ad laborum tempor sint
+                    nostrud. Tempor sint nostrud veniam cillum culpa, minim qui.
+                </p>
+                <a href="#" class="learn-more">EN SAVOIR PLUS</a>
+            </div>
+            <div class="image-content">
+                <img src="assets/img/image2.png" alt="Savoir Faire">
+            </div>
+        </section>
+        <section class="product-suggestions">
+            <h2>NOS SUGGESTIONS</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="assets/img/Tile-1.png" alt="ANDRÉ">
+                    <div class="suggestions-info">
+                        <div class="product-info">
+                            <div class="suggestions-color-selection">
+                                <div class="suggestions-colors">
+                                    <div class="suggestions-color" id="black" onclick="selectColor('black')"></div>
+                                    <div class="suggestions-color" id="white" onclick="selectColor('blue')"></div>
+                                    <div class="suggestions-color" id="brown" onclick="selectColor('green')"></div>
+                                    <div class="suggestions-color unavailable-color" id="navy"></div>
+                                    <div class="suggestions-color" id="gray" onclick="selectColor('white')"></div>
+                                    <div class="suggestions-color" id="red" onclick="selectColor('yellow')"></div>
+                                </div>
+                            </div>
+                            <div class="suggestions-size-selection">
+                                <span>S M L</span>
+                            </div>
+                        </div>
+                        <div class="suggestions-description">
+                            <span>Fedora • Feutre de lapin • Waterproof.</span>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <span class="left-arrow"><img src="assets/icons/left-arrow.png" alt="left-arrow"></span>
+                        <span class="right-arrow"><img src="assets/icons/right-arrow.png" alt="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/img/Tile-2.png" alt="AUSTIN">
+                    <div class="suggestions-info">
+                        <div class="product-info">
+                            <div class="suggestions-color-selection">
+                                <div class="suggestions-colors">
+                                    <div class="suggestions-color" id="black" onclick="selectColor('black')"></div>
+                                    <div class="suggestions-color" id="white" onclick="selectColor('blue')"></div>
+                                    <div class="suggestions-color" id="brown" onclick="selectColor('green')"></div>
+                                    <div class="suggestions-color unavailable-color" id="navy"></div>
+                                    <div class="suggestions-color" id="gray" onclick="selectColor('white')"></div>
+                                    <div class="suggestions-color" id="red" onclick="selectColor('yellow')"></div>
+                                </div>
+                            </div>
+                            <div class="suggestions-size-selection">
+                                <span>S M L</span>
+                            </div>
+                        </div>
+                        <div class="suggestions-description">
+                            <span>Fedora • Feutre de lapin • Waterproof.</span>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <span class="left-arrow"><img src="assets/icons/left-arrow.png" alt="left-arrow"></span>
+                        <span class="right-arrow"><img src="assets/icons/right-arrow.png" alt="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/img/Tile-3.png" alt="TIGER">
+                    <div class="suggestions-info">
+                        <div class="product-info">
+                            <div class="suggestions-color-selection">
+                                <div class="suggestions-colors">
+                                    <div class="suggestions-color" id="black" onclick="selectColor('black')"></div>
+                                    <div class="suggestions-color" id="white" onclick="selectColor('blue')"></div>
+                                    <div class="suggestions-color" id="brown" onclick="selectColor('green')"></div>
+                                    <div class="suggestions-color unavailable-color" id="navy"></div>
+                                    <div class="suggestions-color" id="gray" onclick="selectColor('white')"></div>
+                                    <div class="suggestions-color" id="red" onclick="selectColor('yellow')"></div>
+                                </div>
+                            </div>
+                            <div class="suggestions-size-selection">
+                                <span>S M L</span>
+                            </div>
+                        </div>
+                        <div class="suggestions-description">
+                            <span>Fedora • Feutre de lapin • Waterproof.</span>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <span class="left-arrow"><img src="assets/icons/left-arrow.png" alt="left-arrow"></span>
+                        <span class="right-arrow"><img src="assets/icons/right-arrow.png" alt="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/img/Tile-4.png" alt="NEW ABBY">
+                    <div class="suggestions-info">
+                        <div class="product-info">
+                            <div class="suggestions-color-selection">
+                                <div class="suggestions-colors">
+                                    <div class="suggestions-color" id="black" onclick="selectColor('black')"></div>
+                                    <div class="suggestions-color" id="white" onclick="selectColor('blue')"></div>
+                                    <div class="suggestions-color" id="brown" onclick="selectColor('green')"></div>
+                                    <div class="suggestions-color unavailable-color" id="navy"></div>
+                                    <div class="suggestions-color" id="gray" onclick="selectColor('white')"></div>
+                                    <div class="suggestions-color" id="red" onclick="selectColor('yellow')"></div>
+                                </div>
+                            </div>
+                            <div class="suggestions-size-selection">
+                                <span>S M L</span>
+                            </div>
+                        </div>
+                        <div class="suggestions-description">
+                            <span>Fedora • Feutre de lapin • Waterproof.</span>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <span class="left-arrow"><img src="assets/icons/left-arrow.png" alt="left-arrow"></span>
+                        <span class="right-arrow"><img src="assets/icons/right-arrow.png" alt="right-arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="feature">
+                <img src="assets/icons/icon_delivery.png" alt="Livraison standard offerte">
+                <p>Livraison standard offerte</p>
+            </div>
+            <div class="feature">
+                <img src="assets/icons/icon_returns.png" alt="Retours dans les 14 jours">
+                <p>Retours dans les 14 jours</p>
+            </div>
+            <div class="feature">
+                <img src="assets/icons/icon_store.png" alt="Trouver une boutique">
+                <p>Trouver une boutique</p>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="sizeModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Guide des tailles</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Taille</th>
+                            <th>Poitrine (cm)</th>
+                            <th>Taille (cm)</th>
+                            <th>Hanches (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S</td>
+                            <td>86-91</td>
+                            <td>74-79</td>
+                            <td>91-96</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>91-97</td>
+                            <td>79-84</td>
+                            <td>96-102</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>97-102</td>
+                            <td>84-89</td>
+                            <td>102-107</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>102-107</td>
+                            <td>89-94</td>
+                            <td>107-112</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    </main>
+    <footer>
+        <div class="footer-column">
+            <h3>Suivez-Nous</h3>
+            <p>Souscrivez à la newsletter</p>
+            <ul class="newsletter">
+                <li><a href="#"><img src="assets/icons/tiktok.png" alt="TikTok"></a></li>
+                <li><a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="assets/icons/pinterest.png" alt="Pinterest"></a></li>
+                <li><a href="#"><img src="assets/icons/youtube.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="assets/icons/wechat.png" alt="WeChat"></a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Service en Ligne</h3>
+            <ul>
+                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="#">spanndre un rendez-vous</a></li>
+                <li><a href="#">Livraison & Retour</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>À Propos de Nous</h3>
+            <ul>
+                <li><a href="#">Notre Histoire</a></li>
+                <li><a href="#">Notre Savoir-Faire</a></li>
+                <li><a href="#">Boutiques</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <a href="#"><img src="assets/icons/logo_maison_michel.png" alt="Maison Michel Paris"
+                    class="footer-logo"></a>
+            <p>Fondée en 1936, la Maison Michel excelle en chapellerie de haute couture grâce à son savoir-faire
+                artisanal.</p>
+        </div>
+        <div class="footer-bottom-links">
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Données personnelles</a></li>
+                <li><a href="#">Conditions générales de ventes</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="product-page.js"></script>
+</body>
+
+</html>

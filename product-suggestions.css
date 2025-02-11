@@ -1,0 +1,122 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.product-suggestions {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.product-suggestions h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product {
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+.product-info {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0 10px;
+  width: 90%;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.suggestions-size-selection span {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.navigation {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  transform: scale(1.2) translateY(-10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.left-arrow,
+.right-arrow {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.product:hover .product-info,
+.product:hover .navigation,
+.product:hover .suggestions-description {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.suggestions-colors {
+  display: flex;
+  gap: 5px;
+}
+
+.suggestions-color {
+  border: 1px solid #00000029;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+}
+
+.suggestions-info {
+  position: absolute;
+  bottom: 14%;
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows */
+  padding: 0 10px;
+  width: 95%;
+}
+.suggestions-info div span {
+  font-size: 11px;
+  text-align: left;
+}
+.suggestions-description {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0 10px;
+  text-align: left;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Tablette configuration */
+@media (max-width: 1024px) {
+  .product-container {
+    justify-content: center;
+  }
+  .product-suggestions h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .product-suggestions {
+    padding: 0;
+  }
+}
